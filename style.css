@@ -1,0 +1,61 @@
+:root {
+    --color-white: rgba(255, 255, 245, 100);
+    --color-purple: rgba(133, 10, 235, 92);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body .corpo-principal {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-white);
+}
+
+body .corpo-principal header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    /* border: 1px solid var(--color-purple); */
+    /* box-shadow: 0px 6px 8px var(--color-gray); */
+    /* background-image: var(--color-white); */
+    background-image: linear-gradient(to bottom left, var(--color-purple), var(--color-purple));
+    margin-bottom: 3rem;
+    border-radius: 0px 0px 170px 170px;
+}
+
+body .corpo-principal header p {
+    font-size: 28px;
+    color: var(--color-white);
+}
+
+body .corpo-principal .corpo-conteudo-principal .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 150px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-purple);
+    border-radius: 16px;
+    box-shadow: 8px 6px 8px var(--color-purple);
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+body .corpo-principal .card:hover {
+    top: -30px;
+}
+
+body .corpo-principal .corpo-conteudo-principal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body .corpo-principal .corpo-conteudo-principal p {
+    font-weight: bold;
+}
