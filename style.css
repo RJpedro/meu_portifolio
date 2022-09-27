@@ -13,30 +13,47 @@
 body .corpo-principal {
     width: 100%;
     height: 100vh;
-    background-color: #1a1e23;
+    background-color: var(--color-white);
 }
 
 body .corpo-principal header {
     position: relative;
-    display: flex;
-    align-items: center;
-    /* justify-content: ; */
+    width: 100%;
     height: 250px;
-    background-color: var(--color-white);
-    /* background-image: linear-gradient(to bottom left, var(--color-purple), var(--color-purple)); */
-    margin-bottom: 3rem;
-    padding-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black);
+    margin-bottom: 8%;
     border-radius: 0px 0px 170px 170px;
-    box-shadow: 0px 1px 4px var(--color-    );
+    box-shadow: 0px 1px 4px var(--color-purple);
 }
 
 body .corpo-principal header p {
-    font-size: 32px;
-    color: var(--color-black);
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--color-white);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body .corpo-principal header span {
+    position: absolute;
+    top: 0px;
+    background: var(--color-purple);
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: inset 0 0 10px var(--color-purple);
+    animation: transicao 8s alternate infinite;
+}
+
+body .corpo-principal .corpo-conteudo-principal {
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 body .corpo-principal .corpo-conteudo-principal .card {
-    /* position: relative; */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,52 +67,12 @@ body .corpo-principal .corpo-conteudo-principal .card {
     transition: top ease 0.5s;
 }
 
-body .corpo-principal .card:hover {
-    top: -30px;
-}
-
-body .corpo-principal .corpo-conteudo-principal {
-    display: flex;
-    justify-content: space-evenly;
+body div.corpo-principal div.corpo-conteudo-principal div.card:hover {
+    top: -50px;
 }
 
 body .corpo-principal .corpo-conteudo-principal p {
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: var(--color-black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section span {
-    position: absolute;
-    bottom: 50px;
-    background: var(--color-cyanBlue);
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: inset 0 0 10px var(--color-cyanBlue);
-    animation: transicao 4s linear infinite;
-}
-
-@keyframes transicao {
-    0% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-
-    99% {
-        opacity: 1;
-    }
-    
-    100% {
-        transform: translateY(-1200%);
-        opacity: 0;
-    }
-}
