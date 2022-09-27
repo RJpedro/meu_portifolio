@@ -1,12 +1,13 @@
 function criarBolhas() {
-  const section = document.querySelector("header");
+  const section = document.querySelector("#bolhas");
   const criaElemento = document.createElement("span");
 
-  var tamanho = Math.random() * 60;
+  var tamanho = Math.random() * 55;
 
   criaElemento.style.width = tamanho + "px";
   criaElemento.style.height = tamanho + "px";
-  criaElemento.style.left = Math.random() * (innerWidth / 1.25) + "px";
+  criaElemento.style.opacity = "50%";
+  criaElemento.style.left = Math.random() * innerWidth + "px";
   section.appendChild(criaElemento);
 
   setTimeout(() => {
@@ -16,28 +17,3 @@ function criarBolhas() {
 
 setInterval(criarBolhas, 150);
 
-const cards = document.querySelectorAll(".card");
-
-cards.forEach((card) => {
-  card.addEventListener("click", () => {
-    let dataIndex = card.getAttribute("data-index");
-    let conteudo = null;
-
-    switch (dataIndex) {
-      case 2:
-        conteudo = document.getElementById(2);
-        conteudo.style.display = "";
-        break;
-
-      case 3:
-        conteudo = document.getElementById(3);
-        conteudo.style.display = "";
-        break;
-
-      default:
-        conteudo = document.getElementById(1);
-        conteudo.style.display = "";
-        break;
-    }
-  });
-});
