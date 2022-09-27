@@ -11,31 +11,42 @@
   <body>
     <div class="corpo-principal">
       <header>
-        <p>João Pedro Dos Santos</p>
+        <nav>
+          <p>João Pedro Dos Santos</p>
+
+          <ul>
+            <li><a href="#"> Sobre Mim </a></li>
+            <li><a href="#"> Onde Trabalhei </a></li>
+            <li><a href="#"> O que estou Estudando </a></li>
+            <li><a href="#"> Meu Contato</a></li>
+          </ul>
+        </nav>
       </header>
 
       <div class="corpo-conteudo-principal">
-        <div class="card">
+        <div class="card" data-index="1">
           <p>Sobre Mim</p>
         </div>
-        <div class="card">
+        <div class="card" data-index="2">
           <p>Onde Trabalhei</p>
         </div>
-        <div class="card">
+        <div class="card" data-index="3">
           <p>O que estou Estudando</p>
         </div>
       </div>
     </div>
 
     
-    <div class="corpo-sobre" style="display: none;">
+    <div class="corpo-conteudo-secundario" id="1" style="display: none;">
       <p>Meu nome é João Pedro, tenho 20 anos e moro em Lavrinhas-Capela do Jacu. Desde sempre me interessei 
         por computadores, sempre foi algo que me fascinou e quando conheci a área de desenvolvedor ai que me 
         apaixonei mais ainda. 
       </p>
     </div>
-    <div class="corpo-trabalho" style="display: none;"></div>
-    <div class="corpo-estudo" style="display: none;"></div>
+    
+    <div class="corpo-conteudo-secundario" id="2" style="display: none;"></div>
+    
+    <div class="corpo-conteudo-secundario" id="3" style="display: none;"></div>
 
 
     <script src="scripts.js"></script>
