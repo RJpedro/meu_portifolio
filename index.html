@@ -7,43 +7,51 @@
     <title>Meu Portifólio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="keyframes.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="corpo-principal">
-      <header>
-        <div id="bolhas" style="width: 100%; z-index: 1;"></div>
-        <nav>
-          <p>João Pedro Dos Santos</p>
-
-          <ul>
-            <li><a href="#"> Sobre </a></li>
-            <li><a href="#"> Serviços </a></li>
-            <li><a href="#"> Cursos </a></li>
-            <li><a href="#"> Meu Contato</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <div class="descricao">
-        <p>Sou João Pedro e Trabalho com Desenvolvedor Web!</p>
+      <!-- <header> -->
+      <div id="bolhas" style="width: 100%; z-index: 1"></div>
+      <!-- </header> -->
+      <div class="space" id="space"></div>
+      <div class="card-body" onmouseenter="decrementSpace()" onmouseleave="incrementSpace()">
+        <div class="card-header">
+          <img src="img_1" alt="" />
+        </div>
+        <div class="card-description">
+          <div class="card-content">
+            <h2>
+              João Pedro Dos Santos <br />
+              <p>Desenvolvedor Front/Back-End</p>
+            </h2>
+            <br />
+            <p>
+              Meu nome é João Pedro, tenho 20 anos e moro em Lavrinhas-Capela do
+              Jacu. Desde sempre me interessei por computadores, sempre foi algo
+              que me fascinou e quando conheci a área de desenvolvedor ai que me
+              apaixonei.
+            </p>
+            <div class="btn-about-more">
+              <button>Saiba Mais</button>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- <div class="descricao">
+        <p>Sou João Pedro e Trabalho com Desenvolvedor Web!</p>
+      </div> -->
     </div>
 
-    <div class="corpo-conteudo-secundario" id="1" style="display: none">
-      <p>
-        Meu nome é João Pedro, tenho 20 anos e moro em Lavrinhas-Capela do Jacu.
-        Desde sempre me interessei por computadores, sempre foi algo que me
-        fascinou e quando conheci a área de desenvolvedor ai que me apaixonei
-        mais ainda.
-      </p>
+    <!-- <div class="corpo-conteudo-secundario" id="1" style="display: none">
+      
     </div>
 
     <div class="corpo-conteudo-secundario" id="2" style="display: none"></div>
 
-    <div class="corpo-conteudo-secundario" id="3" style="display: none"></div>
+    <div class="corpo-conteudo-secundario" id="3" style="display: none"></div> -->
 
     <script src="scripts.js"></script>
   </body>

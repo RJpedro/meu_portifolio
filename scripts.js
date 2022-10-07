@@ -7,13 +7,22 @@ function criarBolhas() {
   criaElemento.style.width = tamanho + "px";
   criaElemento.style.height = tamanho + "px";
   criaElemento.style.opacity = "50%";
-  criaElemento.style.left = Math.random() * innerWidth + "px";
+  criaElemento.style.left = Math.random() * 1250 + "px";
   section.appendChild(criaElemento);
 
   setTimeout(() => {
     criaElemento.remove();
-  }, 850);
+  }, 3000);
 }
 
 setInterval(criarBolhas, 150);
 
+var space = document.getElementById("space");
+
+function decrementSpace() { 
+  space.style = "height: 200px;";
+}
+
+function incrementSpace() {
+  space.style = "height: 230px;";
+}
