@@ -9,6 +9,10 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    overflow-y: hidden;
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -182,18 +186,21 @@ button a:hover{
     'cabecalho' 
     'conteudo'
     'rodape';
-    grid-template-rows: auto 80vh auto;
+    grid-template-rows: 13vh 80vh 7vh;
     grid-template-columns: auto;
+    overflow-y: hidden;
 }
 
 .cabecalho {
-    background-color: aqua;
+    background-color: var(--color-white);
     grid-area: cabecalho;
 } 
 
 .conteudo {
-    background-color: blueviolet;
+    background-color: var(--color-white);
     grid-area: conteudo;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
 .rodape {
@@ -203,4 +210,48 @@ button a:hover{
     padding: 1rem;
     grid-area: rodape;
     text-align: center;
+}
+
+.about-me, .my-courses, .my-career {
+    padding: 2rem;
+}
+
+.fa-graduation-cap, .fa-user, .fa-computer {
+    color: var(--color-purple);
+}
+
+.cabecalho {
+    background-color: var(--color-purple);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    color: var(--color-white);
+    font-size: 28px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--color-black);
+    transition: 0.2s;
+    text-shadow: 0 0 20px var(--color-black);
 }

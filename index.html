@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="keyframes.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="corpo-principal" id="corpo-principal">
+    <div class="corpo-principal" id="home">
       <div id="bolhas" style="width: 100%; z-index: 1"></div>
 
       <div class="space" id="space"></div>
@@ -44,14 +53,85 @@
     </div>
 
     <div class="corpo-conteudo-secundario" id="1">
-      <div class="cabecalho"></div>
-      <div class="conteudo"></div>
-      <footer class="rodape">Todos os direitos reservados &copy;2022 </footer>
+      <div class="cabecalho">
+        <header>
+          <nav>
+            <h2 class="logo">Logo minha</h2>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#contact-me">Meus contatos</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <div class="conteudo">
+        <div class="about-me">
+          <h2>Sobre mim <i class="fa-solid fa-user"></i><br /></h2>
+          <br />
+          <p>
+            Como já disse anteriormente meu nome é João Pedro, tenho 20 anos e
+            estou cursando o 6° Semestre de ADS na Fatec de Cruzeiro/SP. Nos
+            dias de semana passo bastante parte do meu tempo codando ou
+            procurando aprender mais sobre algum assunto que estou focando
+            naquele momento. Já nos finais de semana passo boa parte do meu
+            tempo com minha familía.
+          </p>
+          <!-- <div class="btn-about-more">
+            <button><a href="#1">Ver mais</a></button>
+          </div> -->
+        </div>
+        
+        <div class="my-courses">
+          <h2>Meus Cursos e Experiências <i class="fa-solid fa-graduation-cap"></i><br /></h2>
+          <br />
+
+          <h3>Cursos Alura:</h3>
+          <ul>
+            <li>JavaScript: Tipos, variáveis e funções.</li>
+            <li>JavaScript: Objetos.</li>
+            <li>JavaScript: Arrays.</li>
+            <li>JavaScript I: algoritmos de ordenação.</li>
+            <li>
+              algoritmos com JavaScript II: aprofundando em algoritmos de
+              ordernação e busca.
+            </li>
+            <li>NodeJS: criando sua biblioteca.</li>
+            <li>HTML5 e CSS3 parte 1. crie uma página da Web.</li>
+            <li>CSS Grid: simplificando layouts.</li>
+            <li>Git e Github: controle e compartilhe seu código.</li>
+            <li>Laravel: criando uma aplicação com MVC.</li>
+            <li>Laravel: e-mails, eventos assíncronos, uploads e testes.</li>
+          </ul>
+          <!-- <div class="btn-about-more">
+            <button><a href="#1">Ver mais</a></button>
+          </div> -->
+
+          <div style="padding-top: 1rem;"></div>
+          <h3>Cursos a Parte:</h3>
+          <ul>
+            <li>JavaScript: Tipos, variáveis e funções.</li>
+            <li>JavaScript: Objetos.</li>
+          </ul>
+        </div>
+
+        <div class="my-career">
+          <h2>Minha Carreira <i class="fa-solid fa-computer"></i><br /></h2>
+          <br />
+          <p>
+            Atualmente estou trabalhando como estagiário de Inovação e
+            Tecnologia na empresa Mais Top Estética. Lá venho desenvolvendo
+            minhas habilidades com JavaScript, Jquery, HTML5, CSS3, banco de
+            dados MYSQL e PHP.
+          </p>
+
+          <!-- <div class="btn-about-more">
+            <button><a href="#1">Ver mais</a></button>
+          </div> -->
+        </div>
+      </div>
+      <footer class="rodape">Todos os direitos reservados &copy;2022</footer>
     </div>
-
-    <!-- <div class="corpo-conteudo-secundario" id="2" style="display: none"></div>
-
-    <div class="corpo-conteudo-secundario" id="3" style="display: none"></div> -->
 
     <script src="scripts.js"></script>
     <script></script>
