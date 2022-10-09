@@ -7,17 +7,18 @@
     <title>Meu Portifólio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="keyframes.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div class="corpo-principal">
-      <!-- <header> -->
+    <div class="corpo-principal" id="corpo-principal">
       <div id="bolhas" style="width: 100%; z-index: 1"></div>
-      <!-- </header> -->
+
       <div class="space" id="space"></div>
-      <div class="card-body" onmouseenter="decrementSpace()" onmouseleave="incrementSpace()">
+
+      <div class="card-body">
         <div class="card-header">
           <img src="img_1.jpg" alt="" />
         </div>
@@ -35,24 +36,24 @@
               apaixonei.
             </p>
             <div class="btn-about-more">
-              <button>Saiba Mais</button>
+              <button><a href="#1">Saiba Mais</a></button>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div class="descricao">
-        <p>Sou João Pedro e Trabalho com Desenvolvedor Web!</p>
-      </div> -->
     </div>
 
-    <!-- <div class="corpo-conteudo-secundario" id="1" style="display: none">
-      
+    <div class="corpo-conteudo-secundario" id="1">
+      <div class="cabecalho"></div>
+      <div class="conteudo"></div>
+      <footer class="rodape">Todos os direitos reservados &copy;2022 </footer>
     </div>
 
-    <div class="corpo-conteudo-secundario" id="2" style="display: none"></div>
+    <!-- <div class="corpo-conteudo-secundario" id="2" style="display: none"></div>
 
     <div class="corpo-conteudo-secundario" id="3" style="display: none"></div> -->
 
     <script src="scripts.js"></script>
+    <script></script>
   </body>
 </html>

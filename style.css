@@ -19,6 +19,7 @@ html {
     width: 100%;
     height: 100vh;
     background-color: var(--color-purple);
+    overflow-y: hidden;
 }
 
 /* .bolhas {
@@ -65,6 +66,7 @@ html {
     z-index: 9999999;
     box-shadow: 0 35px 80px rgba(255, 255, 255, 0.60);
     transition: 0.5s;
+    margin-bottom: 26%;
 }
 
 .card-body:hover {
@@ -115,7 +117,7 @@ html {
     padding: 40px;
     text-align: center;
     width: 100%;
-    transition: 0.5s;
+    transition: 0.85s;
     transform: translateY(260px);
 }
 
@@ -158,4 +160,47 @@ h2 p {
     background: var(--color-purple);
     color: var(--color-white);
     cursor: pointer;
+}
+
+button a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+button a:hover{
+    color: var(--color-black);
+}
+
+
+.corpo-conteudo-secundario {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-black);
+    display: grid;
+    grid-template-areas: 
+    'cabecalho' 
+    'conteudo'
+    'rodape';
+    grid-template-rows: auto 80vh auto;
+    grid-template-columns: auto;
+}
+
+.cabecalho {
+    background-color: aqua;
+    grid-area: cabecalho;
+} 
+
+.conteudo {
+    background-color: blueviolet;
+    grid-area: conteudo;
+}
+
+.rodape {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-size: .8rem;
+    padding: 1rem;
+    grid-area: rodape;
+    text-align: center;
 }

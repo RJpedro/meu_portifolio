@@ -17,12 +17,4 @@ function criarBolhas() {
 
 setInterval(criarBolhas, 150);
 
-var space = document.getElementById("space");
 
-function decrementSpace() { 
-  space.style = "height: 200px;";
-}
-
-function incrementSpace() {
-  space.style = "height: 230px;";
-}
