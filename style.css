@@ -261,3 +261,17 @@ nav ul li a:hover {
     border-radius: 20px;
     object-fit: cover;
 }
+
+.corpo-conteudo-terciario {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-black);
+    display: grid;
+    grid-template-areas: 
+    'cabecalho' 
+    'conteudo'
+    'rodape';
+    grid-template-rows: 23vh 70vh 7vh;
+    grid-template-columns: auto;
+    overflow-y: hidden;
+}
