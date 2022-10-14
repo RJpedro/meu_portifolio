@@ -11,6 +11,7 @@ html {
 
 body {
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 * {
@@ -57,13 +58,12 @@ body {
 }
 
 .space {
-    height: 230px;
+    height: 32%;
 }
 
 .card-body {
     position: relative;
     border-radius: 20px;
-    margin-left: 37%;
     background-color: var(--color-white);
     width: 360px;
     height: 180px;
@@ -274,4 +274,32 @@ nav ul li a:hover {
     grid-template-rows: 23vh 70vh 7vh;
     grid-template-columns: auto;
     overflow-y: hidden;
+}
+
+.fa-brands{
+    font-size: 2rem;
+}
+
+.conteudo-about {
+    background-color: var(--color-white);
+    grid-area: conteudo;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 85% 15%;
+}
+
+.cont-teste {
+    display: grid;
+    grid-row: 1/2;
+}
+
+.links {
+    display: flex;
+    grid-row: 2/2;
+    justify-content: center;
+    align-items: center;
+}
+
+.ml-3 {
+    margin-left: 2rem;
 }

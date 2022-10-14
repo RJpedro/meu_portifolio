@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portifólio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="response.css" />
     <link rel="stylesheet" href="keyframes.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +23,7 @@
     />
   </head>
   <body>
-    <div class="corpo-principal" id="home">
+    <div class="  " id="home">
       <div id="bolhas" style="width: 100%; z-index: 1"></div>
 
       <div class="space" id="space"></div>
@@ -150,13 +151,21 @@
       </div>
 
       
-      <div class="conteudo">
-        <div>FACEBOOK</div>
-        <div>INSTAGRAM</div>
-        <div>LINKEDIN</div>
-        <div>GITHUB</div>
-        <div>EMAIL</div>
-        <div>WHATSAPP</div>
+      <div class="conteudo-about">
+        <div class="form">
+          <div style="width: 15%; display: flex; justify-content: center; flex-direction: column;">
+            <label for="txtNome">Nome</label>
+            <!-- <input type="text" id="textNome" name="textNome" value=""> -->
+
+            <label for="txtNome">E-mail</label>
+            <!-- <input type="text" id="textEmail" name="textEmail" value=""> -->
+          </div>
+        </div>
+        <div class="links">
+          <a target="_blank" href="https://www.instagram.com/joao.pedro_1008/"><i class="fa-brands fa-instagram"></i></a> 
+          <a class="ml-3" target="_blank" href="https://www.linkedin.com/in/joao-pedro-6289bb216/"><i class="fa-brands fa-linkedin"></i></a> 
+          <a class="ml-3" target="_blank" href="https://github.com/RJpedro"><i class="fa-brands fa-github"></i></a> 
+        </div>
       </div>
     
       <footer class="rodape">Todos os direitos reservados &copy;2022</footer>
