@@ -17,4 +17,9 @@ function criarBolhas() {
 
 setInterval(criarBolhas, 150);
 
+const index = document.getElementById("imageLogo");
+const ancor = document.getElementById("ancor");
 
+index.addEventListener("click", ()=>{
+  ancor.click();
+});
