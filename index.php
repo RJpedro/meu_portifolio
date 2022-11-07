@@ -28,7 +28,7 @@
     <div class="header">
       <header>
         <nav>
-          <h2 class="logo"><img src="logomarca.png" alt="" /></h2>
+          <h2 class="logo"><img src="assets/img/logomarca.png" alt="" /></h2>
           <ul>
             <li><a href="#div-home">Home</a></li>
             <li><a href="#div-habilities">Habilidades </a></li>
@@ -44,7 +44,7 @@
     <div class="div-home" id="div-home">
       <div class="card-body">
         <div class="card-header" id="imageLogo">
-          <img src="img_1.jpg" alt="" />
+          <img src="assets/img/img_1.jpg" alt="" />
         </div>
         <div class="card-description">
           <div class="card-content">
@@ -85,10 +85,11 @@
     <div class="div-projects" id="div-projects">
       <div class="card-body">
         <div class="card-header" id="imageLogo">
+          <img src="<?php echo $arrImages[7];?>" width="180px">
         </div>
         <div class="card-description">
           <div class="card-content">
-            <h2>Em breve<br /></h2>
+            <!-- <h2>Em breve<br /></h2> -->
             <br />
           </div>
         </div>

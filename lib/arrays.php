@@ -10,11 +10,12 @@ $arrHabilities = [
 ];
 
 $arrImages = [
-    0 =>'css.png',
-    1 =>'html.png',
-    2 =>'bootstrap.jpg',
-    3 =>'php.png',
-    4 =>'javascript.png',
-    5 =>'jquery.png',
-    6 =>'laravel.png',
+    0 =>'assets/img/css.png',
+    1 =>'assets/img/html.png',
+    2 =>'assets/img/bootstrap.jpg',
+    3 =>'assets/img/php.png',
+    4 =>'assets/img/javascript.png',
+    5 =>'assets/img/jquery.png',
+    6 =>'assets/img/laravel.png',
+    7 =>'assets/img/em-breve.jpg',
 ];

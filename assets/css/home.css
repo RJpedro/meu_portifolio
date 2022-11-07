@@ -1,7 +1,8 @@
 :root {
     --color-white: rgba(255, 255, 245, 100);
     --color-black: #1a1e23;
-    --color-purple: rgba(133, 10, 235, 92)
+    --color-purple: rgba(133, 10, 235, 92);
+    --color-purple-cards: rgba(110, 2, 235, 0.48);
 }
 
 * {
@@ -93,10 +94,6 @@ nav ul li a:hover {
     color: var(--color-white);
 }
 
-.space {
-    height: 32%;
-}
-
 
 
 .div-home .card-body {
@@ -107,7 +104,7 @@ nav ul li a:hover {
     height: 325px;
     /* width: 360px;
     height: 180px; */
-    box-shadow: 0 35px 80px var(--color-purple);
+    box-shadow: 0 35px 80px var(--color-purple-cards);
 }
 
 /* .card-body:hover {
@@ -186,9 +183,11 @@ nav ul li a:hover {
 
 /* .main-content */
 .div-home {
+    margin-top: 6.6%;
+    margin-bottom: 6.6%;
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: calc(120vh - 24vh);
     justify-content: center;
     align-items: center;
     overflow: auto;
